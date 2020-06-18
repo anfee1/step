@@ -57,8 +57,7 @@ async function setHelloContainerWithServlet() {
 async function setTester() {
   fetch('/login').then(response => response.json()).then((informationLinks) => {
     var title = 'This the test link for user authentication';
-    var theButton =
-        document.getElementById('theButton');
+    var theButton = document.getElementById('theButton');
     var linkHome = document.getElementById('smallContent4Right');
 
     if (!informationLinks.loggedIn) {

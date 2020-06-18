@@ -46,7 +46,7 @@ public final class CommentsServlet extends HttpServlet {
   private static final String DATASTORE_PAYLOAD_PROPERTY_KEY = "payload";
   private static final String DATASTORE_STARS_PROPERTY_KEY = "stars";
   private static final String DATASTORE_COMMENT_ENTITY_TYPE = "Comment";
-  
+
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
     Query query = new Query(DATASTORE_COMMENT_ENTITY_TYPE);
