@@ -26,7 +26,8 @@ public class UsingJson extends HttpServlet {
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
     response.setContentType("application/json;");
-    String team = "{\"members\": [{\"name\": \"Chris\", \"status\" : \"FTE\"},{\"name\": \"Ben\", \"status\": \"FTE\"},{\"name\": \"Cindy\", \"status\" : \"Intern\"},{\"name\": \"Charles\", \"status\" : \"Intern\"}]}";
+    String team =
+        "{\"members\": [{\"name\": \"Chris\", \"status\" : \"FTE\"},{\"name\": \"Ben\", \"status\": \"FTE\"},{\"name\": \"Cindy\", \"status\" : \"Intern\"},{\"name\": \"Charles\", \"status\" : \"Intern\"}]}";
     response.getWriter().println(team);
-    }
+  }
 }
